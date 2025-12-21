@@ -1,0 +1,221 @@
+/* universal styles */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+    font-family: "Saira", sans-serif;
+}
+
+body {
+    background: linear-gradient(hsl(359, 99%, 28%),
+                                 hsl(358, 100%, 7%));
+    background-attachment: fixed;
+    width: 100%;
+}
+
+button {
+    width: 18rem;
+    padding: .75rem 3.25rem;
+    border-radius: .7rem;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+}
+
+img {
+    object-fit: cover;
+    border-radius: .7rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+/* ALl other styles */
+/* nav styles */
+nav {
+    padding: 2rem 0;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav li a {
+    flex-direction: row;
+}
+
+header nav li a:focus {
+    border-bottom: .2rem solid hsl(358, 100%, 7%);
+}
+
+header nav li a:hover {
+    border-bottom: .2rem solid hsl(358, 100%, 7%);
+}
+
+/* main styles */
+
+main {
+    padding: 0 1rem;
+}
+
+
+/*Hero styles */
+#hero {
+    height: 35rem;
+    padding-bottom: 15rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+main > section > h1 {
+    margin-bottom: 1.3rem;
+}
+
+main > section > h1 > span {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3.3rem;
+}
+
+main > section > section {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main > section > section > button:focus {
+    cursor: pointer;
+    background-color: rgb(37, 9, 2);
+    color: white;
+    border: none;
+    transform: scale(1.1);
+}
+
+main > section > section > button:hover {
+    cursor: pointer;
+    background-color: rgb(37, 9, 2);
+    color: white;
+    border: none;
+}
+
+/* gallery */
+#gallery:target {
+    padding-top: 3rem;
+}
+
+#gallery {
+    padding: 3rem 0;
+    margin: 0 2rem;
+}
+
+#gallery > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#gallery > div + div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    padding-top: 2rem;
+}
+
+/* services */
+#services:target {
+    padding-top: 3rem;
+}
+
+#services {
+    margin-bottom: 10rem;
+}
+
+#services > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    /* flex: 2 0 100px;  */
+}
+
+#services > div > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex: 2 0 115px;
+    height: 8rem;
+}
+
+#services > div > div > p {
+    text-align: center;
+    width: fit-content;
+    border-bottom: 1px solid rgb(37, 9, 2);
+    color: white;
+    padding: 0 3px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 2px rgb(37, 9, 2);
+}
+
+#services > div + p {
+    display: block;
+    padding-top: 2rem;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    color: whitesmoke;
+    padding: 3rem 2rem 1.5rem 2rem;
+}
+
+address {
+    padding: 2rem 0;
+}
+
+address + section + div {
+    background-color: white;
+    border: 1px solid white;
+    margin: 1.3rem 0;
+}
+
+address + section + div + section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+address + section + div + section + div {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+address + section + div + section + div > img {
+    /* background: white; */
+    background-color: hsl(0, 0%, 100%);
+    padding: .2rem;
+    border-radius: 25px;
+}
