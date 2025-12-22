@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> 
+    <title>Eagle Con. | Get a quote</title>
+    <link rel="stylesheet" href="assets/styles/form.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#"><img width="40" height="40" src="assets/media/logo/eagle.png" alt="eagle Construction logo"></a></li>
+                <li><a href="#gallery"><img width="40" height="40" src="https://img.icons8.com/parakeet-line/48/gallery.png" alt="gallery"/></a></li>
+                <li><a href="#services"><img width="40" height="40" src="https://img.icons8.com/pulsar-line/48/hammer.png" alt="hammer icon"/></a></li>
+                <li><a href="#contact"><img width="40" height="40" src="https://img.icons8.com/ios/50/phone-disconnected.png" alt="phone icon"/></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <form action="">
+                <h1>Get a quote from Andy</h1>
+                <!-- <h3>Fill out the information below and we will get back to you ASAP!</h3> -->
+                <div id="heading-line"></div>
+                <div class="form-mini-container" id="flname-container">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" placeholder="Juan" required>
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" placeholder="Monterrey" required>
+                </div>
+                <div class="form-mini-container" id="contact-container">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required placeholder="taquito17@gmail.com">
+                    <label for="phone">Phone #</label>
+                    <input type="tel" name="phone" id="phone" required placeholder="970-951-8000" pattern="[0-9]{3}-[09]{3}-[0-9]{4}">
+                </div>
+                <div class="line"></div>
+                <div class="form-mini-container" id="address-container">
+                    <label for="home-address">Home Address</label>
+                    <input type="text" name="home-address" id="home-address" placeholder="7317 N McCollen Ln" required>
+                    <label for="city/town">City/Town</label>
+                    <input type="text" name="city/town" id="city/town" placeholder="McRidge" required>
+                    <label for="state">State</label>
+                    <input type="text" name="state" id="state" placeholder="Misery" required>
+                </div>
+                <div class="form-mini-container" id="prjct-description-container">
+                    <label for="prjct-description">Project(s) Description</label>
+                    <textarea id="prjct-description" minlength="25" maxlength="1000" placeholder="Describe to us the project..." rows="4" cols="40"></textarea>
+                </div>
+                <div class="form-mini-container" id="files-container">
+                    <label for="file">Files or Images</label>
+                    <input type="file" name="files" id="files">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer id="contact">
+        <section>
+            <h3>About</h3>
+            <p>Eagle CONS. has 25+ years of experience in all sorts of residential construction
+            and 10+ years in commercial construction. You can trust us to get the job done.
+            We are fast, reliable, and efficient; meaning we save you money in the long run
+            and peace of mind when it matters most.</p>
+        </section>
+        <address>
+            <h3>Contact</h3>
+            Andy Valencia <br>
+            (928) 951-4295 <br>
+            303 N Banana Dr. <br>
+            Payyorson, AZ 85555
+        </address>
+        <section>
+            <h3>Network</h3>
+            <ul>
+                <li>Andy's Landscaping & Stonework LLC</li>
+                <li>Eagle Roofing LLC</li>
+                <li>Valencia Works LLC</li>
+            </ul>
+        </section>
+        <div><!--dividing line goes here--></div>
+        <section>
+            <small>Copyright&copy; 2025 All Rights Reserved by TuMejorTrabajador</small>
+        </section>
+        <div>
+            <img class="lazyload" src="assets/media/logo/icons8-facebook.svg" alt="">
+            <img class="lazyload" src="assets/media/logo/icons8-whatsapp.svg" alt="">
+            <img class="lazyload" src="assets/media/logo/icons8-instagram.svg" alt="">
+        </div>
+    </footer>
+</body>
+</html>

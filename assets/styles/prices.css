@@ -1,0 +1,128 @@
+html {
+    scroll-behavior: smooth;
+    background: linear-gradient(hsl(359, 99%, 28%), hsl(358, 100%, 7%));
+    background: hsl(359, 99%, 28%);
+}
+
+* {
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+    font-family: "Saira", sans-serif;
+    color: black;
+}
+
+body {
+    background: linear-gradient(hsl(359, 99%, 28%), hsl(358, 100%, 7%));
+    background: hsl(359, 99%, 28%);
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100svh;
+}
+
+button {
+    width: 18rem;
+    padding: .75rem 3.25rem;
+    border-radius: .7rem;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    color: black;
+}
+
+img {
+    object-fit: cover;
+    border-radius: .7rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+/* ALl other styles */
+/* nav styles */
+nav {
+    padding: 2rem 0;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav li a {
+    flex-direction: row;
+}
+
+header nav li a:focus {
+    border-bottom: .2rem solid hsl(358, 100%, 7%);
+}
+
+header nav li a:hover {
+    border-bottom: .2rem solid hsl(358, 100%, 7%);
+}
+
+/* main styles */
+
+main {
+    height: 85svh;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    font-size: 1.5rem;
+}
+
+/* footer */
+#contact section h3, p, li, address, address h3, small{
+    color: whitesmoke;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    padding: 3rem 2rem 3rem 2rem;
+}
+
+address {
+    padding: 2rem 0;
+}
+
+address + section + div {
+    background-color: white;
+    border: 1px solid white;
+    margin: 1.3rem 0;
+}
+
+address + section + div + section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+address + section + div + section + div {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+address + section + div + section + div > img {
+    /* background: white; */
+    background-color: hsl(0, 0%, 100%);
+    padding: .2rem;
+    border-radius: 25px;
+}

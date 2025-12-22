@@ -1,0 +1,204 @@
+/* universal styles */
+:root {
+    --black-txt: black;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: linear-gradient(hsl(359, 99%, 28%), hsl(358, 100%, 7%));
+    background: hsl(359, 99%, 28%);
+}
+
+* {
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+    font-family: "Saira", sans-serif;
+    color: black;
+}
+
+body {
+    background: linear-gradient(hsl(359, 99%, 28%), hsl(358, 100%, 7%));
+    background: hsl(359, 99%, 28%);
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100svh;
+}
+
+button {
+    width: 18rem;
+    padding: .75rem 3.25rem;
+    border-radius: .7rem;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    color: black;
+}
+
+button:focus {
+    cursor: pointer;
+    background-color: rgb(37, 9, 2);
+    color: white;
+    border: none;
+    transform: scale(1.1);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(37, 9, 2);
+    color: whitesmoke;
+    border: none;
+}
+
+img {
+    object-fit: cover;
+    border-radius: .7rem;
+}
+
+h1 {
+    font-size: 1.9rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+/* ALl other styles */
+/* nav styles */
+nav {
+    padding: 2rem 0;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav li a {
+    flex-direction: row;
+}
+
+header nav li a:focus {
+    border-bottom: .2rem solid hsl(358, 100%, 7%);
+}
+
+header nav li a:hover {
+    border-bottom: .2rem solid hsl(358, 100%, 7%);
+}
+
+/* main styles */
+
+main {
+    padding: 0 1rem;
+}
+
+/* form styles */
+.form-container {
+    display: flex;
+    justify-content: center;
+    min-width: 400px;
+    padding: 4rem 1rem;
+}
+
+form {
+    border: 5px solid hsl(0, 0%, 100%, 0.6);
+    border-radius: .8rem;
+    padding: 5rem 1rem;
+}
+
+#heading-line {
+    width: 95%;
+    height: 5px;
+    display: block;
+    flex-direction: row;
+    flex: 1 0 auto;
+    background-color: white;
+    border: 1px solid white;
+    margin: 1.3rem 0;
+    border-radius: .5rem;
+}
+
+form, form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form div label, input, textarea {
+    max-height: 1.75rem;
+    max-width: 500px;
+    flex: 1 1 380px;
+    border-radius: .5rem;
+    border: none;
+}
+
+form div:nth-of-type(7) {
+    padding-bottom: 4rem;
+}
+
+
+
+label {
+    padding: 1.5rem 0;
+}
+
+.line {
+    width: 70%;
+    display: block;
+    flex-direction: row;
+    flex: 1 0 auto;
+    background-color: white;
+    border: 1px solid white;
+    margin: 1.3rem 0;
+}
+
+/* footer */
+#contact section h3, p, li, address, address h3, small{
+    color: hsl(0, 0%, 100%);
+}
+
+footer {
+    background-color: black;
+    padding: 3rem 2rem 3rem 2rem;
+}
+
+address {
+    padding: 2rem 0;
+}
+
+address + section + div {
+    background-color: white;
+    border: 1px solid white;
+    margin: 1.3rem 0;
+}
+
+address + section + div + section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+address + section + div + section + div {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+address + section + div + section + div > img {
+    /* background: white; */
+    background-color: hsl(0, 0%, 100%);
+    padding: .2rem;
+    border-radius: 25px;
+}

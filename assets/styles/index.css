@@ -1,4 +1,8 @@
 /* universal styles */
+:root {
+    --black-txt: black;
+}
+
 html {
     scroll-behavior: smooth;
     background: linear-gradient(hsl(359, 99%, 28%), hsl(358, 100%, 7%));
@@ -14,6 +18,7 @@ html {
     text-align: center;
     list-style-type: none;
     font-family: "Saira", sans-serif;
+    color: black;
 }
 
 body {
@@ -82,13 +87,13 @@ main {
 /*Hero styles */
 #hero {
     height: 35rem;
-    padding-bottom: 15rem;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
+    padding: 15rem 0rem 35rem 0;
+    z-index: 3;
 }
 
 main > section > h1 {
     margin-bottom: 1.3rem;
+    background-color: hsl(359, 99%, 28%);
 }
 
 main > section > h1 > span {
@@ -105,7 +110,7 @@ main > section > section {
     justify-content: space-between;
 }
 
-main > section > section > button:focus {
+main > section > section > a button:focus {
     cursor: pointer;
     background-color: rgb(37, 9, 2);
     color: white;
@@ -113,10 +118,10 @@ main > section > section > button:focus {
     transform: scale(1.1);
 }
 
-main > section > section > button:hover {
+main > section > section > a button:hover {
     cursor: pointer;
     background-color: rgb(37, 9, 2);
-    color: white;
+    color: whitesmoke;
     border: none;
 }
 
@@ -128,6 +133,10 @@ main > section > section > button:hover {
 #gallery {
     padding: 3rem 0;
     margin: 0 2rem;
+}
+
+#gallery p {
+    color: black;
 }
 
 #gallery > div {
@@ -172,6 +181,10 @@ main > section > section > button:hover {
     height: 8rem;
 }
 
+#services > h2 {
+    color: white;
+}
+
 #services > div > div > p {
     text-align: center;
     width: fit-content;
@@ -188,9 +201,12 @@ main > section > section > button:hover {
 }
 
 /* footer */
+#contact section h3, p, li, address, address h3, small{
+    color: whitesmoke;
+}
+
 footer {
     background-color: black;
-    color: whitesmoke;
     padding: 3rem 2rem 3rem 2rem;
 }
 
