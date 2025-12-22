@@ -5,8 +5,8 @@
 
 html {
     scroll-behavior: smooth;
-    background: linear-gradient(hsl(359, 99%, 28%), hsl(358, 100%, 7%));
-    background: hsl(359, 99%, 28%);
+    background: linear-gradient(hsl(359, 99%, 40%), hsl(358, 100%, 7%));
+    background: hsl(359, 99%, 40%);
 }
 
 * {
@@ -22,8 +22,8 @@ html {
 }
 
 body {
-    background: linear-gradient(hsl(359, 99%, 28%), hsl(358, 100%, 7%));
-    background: hsl(359, 99%, 28%);
+    background: linear-gradient(hsl(359, 99%, 40%), hsl(358, 100%, 7%));
+    background: hsl(359, 99%, 40%);
     background-attachment: fixed;
     width: 100%;
     min-height: 100svh;
@@ -93,7 +93,7 @@ main {
 
 main > section > h1 {
     margin-bottom: 1.3rem;
-    background-color: hsl(359, 99%, 28%);
+    background-color: hsl(359, 99%, 40%);
 }
 
 main > section > h1 > span {
