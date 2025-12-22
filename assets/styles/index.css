@@ -1,12 +1,12 @@
 /* universal styles */
 :root {
     --black-txt: black;
+    --bgColor: hsl(359, 99%, 56%);
 }
 
 html {
     scroll-behavior: smooth;
-    background: linear-gradient(hsl(359, 99%, 40%), hsl(358, 100%, 7%));
-    background: hsl(359, 99%, 40%);
+    background: var(--bgColor);
 }
 
 * {
@@ -22,8 +22,7 @@ html {
 }
 
 body {
-    background: linear-gradient(hsl(359, 99%, 40%), hsl(358, 100%, 7%));
-    background: hsl(359, 99%, 40%);
+    background: var(--bgColor);
     background-attachment: fixed;
     width: 100%;
     min-height: 100svh;
@@ -93,7 +92,7 @@ main {
 
 main > section > h1 {
     margin-bottom: 1.3rem;
-    background-color: hsl(359, 99%, 40%);
+    background-color: var(--bgColor);
 }
 
 main > section > h1 > span {

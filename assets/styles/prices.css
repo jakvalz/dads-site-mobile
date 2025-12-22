@@ -1,7 +1,12 @@
+/* universal styles */
+:root {
+    --black-txt: black;
+    --bgColor: hsl(359, 99%, 56%);
+}
+
 html {
     scroll-behavior: smooth;
-    background: linear-gradient(hsl(359, 99%, 28%), hsl(358, 100%, 7%));
-    background: hsl(359, 99%, 28%);
+    background: var(--bgColor);
 }
 
 * {
@@ -17,8 +22,7 @@ html {
 }
 
 body {
-    background: linear-gradient(hsl(359, 99%, 40%), hsl(358, 100%, 7%));
-    background: hsl(359, 99%, 40%);
+    background: var(--bgColor);
     background-attachment: fixed;
     width: 100%;
     min-height: 100svh;
