@@ -1,6 +1,8 @@
 /* universal styles */
 html {
     scroll-behavior: smooth;
+    background: linear-gradient(hsl(359, 99%, 28%),
+                                 hsl(358, 100%, 7%));
 }
 
 * {
@@ -19,6 +21,7 @@ body {
                                  hsl(358, 100%, 7%));
     background-attachment: fixed;
     width: 100%;
+    min-height: 100svh;
 }
 
 button {
