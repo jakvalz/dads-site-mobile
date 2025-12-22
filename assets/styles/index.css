@@ -1,8 +1,8 @@
 /* universal styles */
 html {
     scroll-behavior: smooth;
-    background: linear-gradient(hsl(359, 99%, 28%),
-                                 hsl(358, 100%, 7%));
+    background: linear-gradient(hsl(359, 99%, 28%), hsl(358, 100%, 7%));
+    background: hsl(359, 99%, 28%);
 }
 
 * {
@@ -17,8 +17,8 @@ html {
 }
 
 body {
-    background: linear-gradient(hsl(359, 99%, 28%),
-                                 hsl(358, 100%, 7%));
+    background: linear-gradient(hsl(359, 99%, 28%), hsl(358, 100%, 7%));
+    background: hsl(359, 99%, 28%);
     background-attachment: fixed;
     width: 100%;
     min-height: 100svh;
@@ -31,6 +31,7 @@ button {
     border: none;
     background-color: white;
     font-weight: 600;
+    color: black;
 }
 
 img {
@@ -190,7 +191,7 @@ main > section > section > button:hover {
 footer {
     background-color: black;
     color: whitesmoke;
-    padding: 3rem 2rem 1.5rem 2rem;
+    padding: 3rem 2rem 3rem 2rem;
 }
 
 address {
