@@ -1,10 +1,4 @@
-:root {
-    --bgColor: hsl(359, 99%, 56%);
-    --ink: rgb(37, 9, 2);
-}
-
 html {
-    scroll-behavior: smooth;
     background: var(--bgColor);
     font-size: 16px;
 }
@@ -17,7 +11,7 @@ html {
     text-align: center;
     list-style-type: none;
     font-family: "Saira", sans-serif;
-    color: black;
+    color: var(--text-on-bg);
 }
 
 body {
@@ -70,7 +64,7 @@ nav a {
     justify-content: center;
     padding: 0.4rem;
     border-radius: 1rem;
-    background: white;
+    background: var(--surface);
     box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, 0.9),
         0 8px 16px rgba(37, 9, 2, 0.22),
@@ -122,7 +116,7 @@ footer li,
 footer address,
 footer a,
 footer small {
-    color: whitesmoke;
+    color: var(--text-on-dark);
 }
 
 footer section,
@@ -143,7 +137,7 @@ footer li + li {
 
 .footer-rule {
     height: 1px;
-    background-color: white;
+    background-color: var(--surface);
     margin: 1.3rem auto;
     max-width: 40rem;
 }
@@ -166,7 +160,7 @@ footer li + li {
 .socials img {
     width: 36px;
     height: 36px;
-    background-color: white;
+    background-color: var(--surface);
     padding: 0.2rem;
     border-radius: 50%;
     box-shadow: 0 8px 14px rgba(0, 0, 0, 0.35);
@@ -176,4 +170,13 @@ footer li + li {
 .socials img:hover {
     transform: translateY(-4px) scale(1.08);
     box-shadow: 0 14px 22px rgba(0, 0, 0, 0.45);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    nav a:hover,
+    nav a:focus-visible,
+    nav a:active,
+    .socials img:hover {
+        transform: none;
+    }
 }
