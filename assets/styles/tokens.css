@@ -1,0 +1,38 @@
+:root {
+    --bgColor: hsl(359, 99%, 56%);
+    --ink: rgb(37, 9, 2);
+    --surface: white;
+    --text-on-bg: var(--ink);
+    --text-on-dark: whitesmoke;
+    --focus-ring: var(--ink);
+    --border-strong: var(--ink);
+    --placeholder: rgb(90, 55, 48);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a:focus-visible,
+.btn:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
