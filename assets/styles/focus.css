@@ -1,0 +1,12 @@
+/* Loaded after page CSS so rings are not overridden by decorative shadows. */
+a:focus-visible,
+.btn:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 3px;
+    box-shadow:
+        0 0 0 3px var(--focus-ring-contrast),
+        0 0 0 6px var(--focus-ring);
+}
